@@ -2,9 +2,14 @@
 node_modules/
 .pnp/
 .pnp.js
+jspm_packages/
+bower_components/
+web_modules/
 
 # Testing
 coverage/
+.nyc_output/
+lib-cov/
 
 # Next.js
 .next/
@@ -13,15 +18,29 @@ out/
 # Production
 build/
 dist/
+build/Release
 
 # Misc
 .DS_Store
 *.pem
+.lock-wscript
+.grunt
 
 # Debug
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime
+pids/
+*.pid
+*.seed
+*.pid.lock
 
 # Local env files
 .env
@@ -39,13 +58,76 @@ yarn-error.log*
 # Docker volumes
 data/
 
-# Logs
-logs/
-*.log
-
 # Cache
 .cache/
 .npm/
+.parcel-cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
 
 # TypeScript
 *.tsbuildinfo
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# Gatsby files
+.cache/
+# Comment in the public line in if your project uses Gatsby and not Next.js
+# https://nextjs.org/blog/next-9-1#public-directory-support
+# public
+
+# vuepress build output
+.vuepress/dist
+
+# vuepress v2.x temp and cache directory
+.temp
+.cache
+
+# Docusaurus cache and generated files
+.docusaurus
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variable files
